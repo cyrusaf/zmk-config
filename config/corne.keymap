@@ -36,7 +36,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        letters {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BSPC |
             // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
@@ -49,6 +49,8 @@
 &kp LSHFT  &kp Z  &kp X  &kp C     &kp V  &kp B        &kp N    &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
                          &kp LGUI  &mo 2  &kp SPACE    &kp RET  &mo 1  &kp RALT
             >;
+
+            label = "letters";
         };
 
         nums+symbols {
@@ -58,6 +60,8 @@
 &trans  &trans      &kp N7  &kp N8  &kp N9  &kp ASTERISK    &kp GRAVE        &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RBKT  &kp TILDE      &trans
                             &kp N0  &trans  &trans          &trans           &trans                 &trans
             >;
+
+            label = "nums+symbols";
         };
 
         lower_layer {
