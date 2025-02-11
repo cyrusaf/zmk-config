@@ -81,7 +81,7 @@
                             &kp N0  &trans  &trans          &trans           &trans                 &trans
             >;
 
-            label = "num+sym";
+            label = "symbols";
         };
 
         lower_layer {
